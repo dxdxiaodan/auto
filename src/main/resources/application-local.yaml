@@ -1,0 +1,23 @@
+webdriver:
+  chrome:
+    driver: webdriver.chrome.driver
+    driver-path: G:\study\webDriver\bin\chromedriver89.exe
+  firefox:
+    driver: webdriver.gecko.driver
+    driver-path: G:\study\webDriver\bin\geckodriver29.exe
+web-login-url: /
+web-pre-url: http://127.0.0.1:7070
+user:
+  handlers:
+    user1: daixiaodan
+    pwd1: 123456
+    user2: lizhi4
+    pwd2: 123456
+  company:
+    user1:
+    pwd:
+test:
+  auth:
+    data1:
+      path: C:\Users\DELL\Desktop\权限测试.xlsx
+      sheetname: 权限测试数据

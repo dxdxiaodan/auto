@@ -1,0 +1,5 @@
+test:
+  auth:
+    data1:
+      location: C:\Users\DELL\Desktop\权限测试.xlsx
+      sheetname: 权限测试数据

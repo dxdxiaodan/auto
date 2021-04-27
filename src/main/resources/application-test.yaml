@@ -1,0 +1,4 @@
+webdriver:
+  chrome-driver: webdriver.chrome.driver
+  chrome-driver-path: G:\study\webDriver\bin\chromedriver.exe
+main-page: http://10.3.150.25/yunbidding/

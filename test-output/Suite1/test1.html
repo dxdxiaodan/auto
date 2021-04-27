@@ -1,0 +1,1314 @@
+<html>
+<head>
+<title>TestNG:  test1</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>test1</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>11/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Sun Apr 25 16:19:34 CST 2021</td>
+</tr>
+<tr><td>Total time:</td><td>143 seconds (143096 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.auto.selenium.AuthTest.testDataProvider()'><b>testDataProvider</b><br>Test class: com.auto.selenium.AuthTest<br>Parameters: 1, 系统管理：仅赋予公告管理权限，其余二级页面均不可访问, daixiaodan, 123456, lizhi4, 123456.0, cedarhdrole895080576451616768, [{
+      "menuName":"系统管理",
+      "level":"1",
+      "menuCode":"M010000000",
+      "link":"","title":"",
+      "child":[{
+            "menuName":"公告管理",
+            "level":"2",
+            "menuCode":"M010000001",
+            "link":"/ebid/notice/notice-manager!noticeQuery.action",
+            "child":[]
+      }]
+}], [{
+      "menuName":"系统管理",
+      "level":"1",
+      "menuCode":"M010000000",
+      "title":"",
+      "link":"",
+      "child":[{
+            "menuName":"系统通知",
+            "level":"2",
+            "menuCode":"M010000002",
+            "title":"系统通知",
+            "link":"/notice/sys-notice!noticeList.action",
+            "child":[]
+      },{
+            "menuName":"业务通知",
+            "level":"2",
+            "menuCode":"M010000003",
+            "title":"业务通知",
+            "link":"/notice/info-notice!noticeList.action",
+            "child":[]
+      },{
+            "menuName":"成员管理",
+            "level":"2",
+            "menuCode":"M010000004",
+            "title":"成员管理",
+            "link":"/sys/user/user-manage!queryUserList.action",
+            "child":[]
+      },{
+            "menuName":"部门管理",
+            "level":"2",
+            "menuCode":"M010000005",
+            "title":"部门管理",
+            "link":"/sys/dept/plat-dept!goDept.action",
+            "child":[]
+      },{
+            "menuName":"角色管理",
+            "level":"2",
+            "menuCode":"M010000006",
+            "title":"角色管理",
+            "link":"/sys/rolemanage/role-manage!toShowRoleList.action",
+            "child":[]
+      },{
+            "menuName":"集团管理",
+            "level":"2",
+            "menuCode":"M010000007",
+            "title":"下属公司信息",
+            "link":"/sys/subcompany/subcompany!toSubcompany.action",
+            "child":[]
+      },{
+            "menuName":"供方同步",
+            "level":"2",
+            "menuCode":"M010000008",
+            "title":"供方同步",
+            "link":"/supply/sync/supply-sync!toSync.action",
+            "child":[]
+      },{
+            "menuName":"供方同步日志",
+            "level":"2",
+            "menuCode":"M010000009",
+            "title":"供方同步日志",
+            "link":"/supply/sync/supply-sync!toSyncUpdate.action",
+            "child":[]
+      },{
+            "menuName":"短信日志查询",
+            "level":"2",
+            "menuCode":"M010000010",
+            "title":"短信日志查询",
+            "link":"/delegation/delegation!toSnsPage.action",
+            "child":[]
+      },{
+            "menuName":"合同推送日志",
+            "level":"2",
+            "menuCode":"M010000011",
+            "title":"合同推送日志",
+            "link":"/contract/contract!toContractPushLog.action",
+            "child":[]
+      }]
+}], 访问的页面包含menuName值, 你没有访问该页面的权限<br/>
+<a href="#Output-820677667" onClick='toggleBox("Output-820677667", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-820677667" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-820677667">
+用户[lizhi4]是否有权限访问页面[系统管理：公告管理]【/ebid/notice/notice-manager!noticeQuery.action】:true<br/>
+用户[lizhi4]是否无权限访问页面[系统管理：系统通知]【/notice/sys-notice!noticeList.action】:true<br/>
+用户[lizhi4]是否无权限访问页面[系统管理：业务通知]【/notice/info-notice!noticeList.action】:true<br/>
+用户[lizhi4]是否无权限访问页面[系统管理：成员管理]【/sys/user/user-manage!queryUserList.action】:true<br/>
+用户[lizhi4]是否无权限访问页面[系统管理：部门管理]【/sys/dept/plat-dept!goDept.action】:true<br/>
+用户[lizhi4]是否无权限访问页面[系统管理：角色管理]【/sys/rolemanage/role-manage!toShowRoleList.action】:true<br/>
+用户[lizhi4]是否无权限访问页面[系统管理：集团管理]【/sys/subcompany/subcompany!toSubcompany.action】:true<br/>
+用户[lizhi4]是否无权限访问页面[系统管理：供方同步]【/supply/sync/supply-sync!toSync.action】:true<br/>
+用户[lizhi4]是否无权限访问页面[系统管理：供方同步日志]【/supply/sync/supply-sync!toSyncUpdate.action】:true<br/>
+用户[lizhi4]是否无权限访问页面[系统管理：短信日志查询]【/delegation/delegation!toSnsPage.action】:true<br/>
+用户[lizhi4]是否无权限访问页面[系统管理：合同推送日志]【/contract/contract!toContractPushLog.action】:true<br/>
+</div>
+</td>
+<td></td>
+<td>21</td>
+<td>com.auto.selenium.AuthTest@11438d26</td></tr>
+<tr>
+<td title='com.auto.selenium.AuthTest.testDataProvider()'><b>testDataProvider</b><br>Test class: com.auto.selenium.AuthTest<br>Parameters: 2, 系统管理：仅赋予系统通知权限，其余二级页面均不可访问, daixiaodan, 123456, lizhi4, 123456.0, cedarhdrole895080576451616768, [{
+      "menuName":"系统管理",
+      "level":"1",
+      "menuCode":"M010000000",
+      "link":"","title":"",
+      "child":[{
+            "menuName":"系统通知",
+            "level":"2",
+            "menuCode":"M010000002",
+            "link":"/notice/sys-notice!noticeList.action",
+            "child":[]
+      }]
+}], [{
+      "menuName":"系统管理",
+      "level":"1",
+      "menuCode":"M010000000",
+      "title":"",
+      "link":"",
+      "child":[{
+            "menuName":"公告管理",
+            "level":"2",
+            "menuCode":"M010000001",
+            "title":"公告管理",
+            "link":"/ebid/notice/notice-manager!noticeQuery.action",
+            "child":[]
+      },{
+            "menuName":"业务通知",
+            "level":"2",
+            "menuCode":"M010000003",
+            "title":"业务通知",
+            "link":"/notice/info-notice!noticeList.action",
+            "child":[]
+      },{
+            "menuName":"成员管理",
+            "level":"2",
+            "menuCode":"M010000004",
+            "title":"成员管理",
+            "link":"/sys/user/user-manage!queryUserList.action",
+            "child":[]
+      },{
+            "menuName":"部门管理",
+            "level":"2",
+            "menuCode":"M010000005",
+            "title":"部门管理",
+            "link":"/sys/dept/plat-dept!goDept.action",
+            "child":[]
+      },{
+            "menuName":"角色管理",
+            "level":"2",
+            "menuCode":"M010000006",
+            "title":"角色管理",
+            "link":"/sys/rolemanage/role-manage!toShowRoleList.action",
+            "child":[]
+      },{
+            "menuName":"集团管理",
+            "level":"2",
+            "menuCode":"M010000007",
+            "title":"下属公司信息",
+            "link":"/sys/subcompany/subcompany!toSubcompany.action",
+            "child":[]
+      },{
+            "menuName":"供方同步",
+            "level":"2",
+            "menuCode":"M010000008",
+            "title":"供方同步",
+            "link":"/supply/sync/supply-sync!toSync.action",
+            "child":[]
+      },{
+            "menuName":"供方同步日志",
+            "level":"2",
+            "menuCode":"M010000009",
+            "title":"供方同步日志",
+            "link":"/supply/sync/supply-sync!toSyncUpdate.action",
+            "child":[]
+      },{
+            "menuName":"短信日志查询",
+            "level":"2",
+            "menuCode":"M010000010",
+            "title":"短信日志查询",
+            "link":"/delegation/delegation!toSnsPage.action",
+            "child":[]
+      },{
+            "menuName":"合同推送日志",
+            "level":"2",
+            "menuCode":"M010000011",
+            "title":"合同推送日志",
+            "link":"/contract/contract!toContractPushLog.action",
+            "child":[]
+      }]
+}], 访问的页面包含menuName值, 你没有访问该页面的权限<br/>
+<a href="#Output-1620112330" onClick='toggleBox("Output-1620112330", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1620112330" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1620112330">
+用户[lizhi4]是否有权限访问页面[系统管理：系统通知]【/notice/sys-notice!noticeList.action】:true<br/>
+用户[lizhi4]是否无权限访问页面[系统管理：公告管理]【/ebid/notice/notice-manager!noticeQuery.action】:true<br/>
+用户[lizhi4]是否无权限访问页面[系统管理：业务通知]【/notice/info-notice!noticeList.action】:true<br/>
+用户[lizhi4]是否无权限访问页面[系统管理：成员管理]【/sys/user/user-manage!queryUserList.action】:true<br/>
+用户[lizhi4]是否无权限访问页面[系统管理：部门管理]【/sys/dept/plat-dept!goDept.action】:true<br/>
+用户[lizhi4]是否无权限访问页面[系统管理：角色管理]【/sys/rolemanage/role-manage!toShowRoleList.action】:true<br/>
+用户[lizhi4]是否无权限访问页面[系统管理：集团管理]【/sys/subcompany/subcompany!toSubcompany.action】:true<br/>
+用户[lizhi4]是否无权限访问页面[系统管理：供方同步]【/supply/sync/supply-sync!toSync.action】:true<br/>
+用户[lizhi4]是否无权限访问页面[系统管理：供方同步日志]【/supply/sync/supply-sync!toSyncUpdate.action】:true<br/>
+用户[lizhi4]是否无权限访问页面[系统管理：短信日志查询]【/delegation/delegation!toSnsPage.action】:true<br/>
+用户[lizhi4]是否无权限访问页面[系统管理：合同推送日志]【/contract/contract!toContractPushLog.action】:true<br/>
+</div>
+</td>
+<td></td>
+<td>8</td>
+<td>com.auto.selenium.AuthTest@11438d26</td></tr>
+<tr>
+<td title='com.auto.selenium.AuthTest.testDataProvider()'><b>testDataProvider</b><br>Test class: com.auto.selenium.AuthTest<br>Parameters: 3, 系统管理：仅赋予业务通知权限，其余二级页面均不可访问, daixiaodan, 123457, lizhi4, 123457.0, cedarhdrole895080576451616768, [{
+      "menuName":"系统管理",
+      "level":"1",
+      "menuCode":"M010000000",
+      "link":"","title":"",
+      "child":[{
+            "menuName":"业务通知",
+            "level":"2",
+            "menuCode":"M010000003",
+            "title":"业务通知",
+            "link":"/notice/info-notice!noticeList.action",
+            "child":[]
+      }]
+}]
+, [{
+      "menuName":"系统管理",
+      "level":"1",
+      "menuCode":"M010000000",
+      "title":"",
+      "link":"",
+      "child":[{
+            "menuName":"公告管理",
+            "level":"2",
+            "menuCode":"M010000001",
+            "title":"公告管理",
+            "link":"/ebid/notice/notice-manager!noticeQuery.action",
+            "child":[]
+      },{
+            "menuName":"系统通知",
+            "level":"2",
+            "menuCode":"M010000002",
+            "title":"系统通知",
+            "link":"/notice/sys-notice!noticeList.action",
+            "child":[]
+      },{
+            "menuName":"成员管理",
+            "level":"2",
+            "menuCode":"M010000004",
+            "title":"成员管理",
+            "link":"/sys/user/user-manage!queryUserList.action",
+            "child":[]
+      },{
+            "menuName":"部门管理",
+            "level":"2",
+            "menuCode":"M010000005",
+            "title":"部门管理",
+            "link":"/sys/dept/plat-dept!goDept.action",
+            "child":[]
+      },{
+            "menuName":"角色管理",
+            "level":"2",
+            "menuCode":"M010000006",
+            "title":"角色管理",
+            "link":"/sys/rolemanage/role-manage!toShowRoleList.action",
+            "child":[]
+      },{
+            "menuName":"集团管理",
+            "level":"2",
+            "menuCode":"M010000007",
+            "title":"下属公司信息",
+            "link":"/sys/subcompany/subcompany!toSubcompany.action",
+            "child":[]
+      },{
+            "menuName":"供方同步",
+            "level":"2",
+            "menuCode":"M010000008",
+            "title":"供方同步",
+            "link":"/supply/sync/supply-sync!toSync.action",
+            "child":[]
+      },{
+            "menuName":"供方同步日志",
+            "level":"2",
+            "menuCode":"M010000009",
+            "title":"供方同步日志",
+            "link":"/supply/sync/supply-sync!toSyncUpdate.action",
+            "child":[]
+      },{
+            "menuName":"短信日志查询",
+            "level":"2",
+            "menuCode":"M010000010",
+            "title":"短信日志查询",
+            "link":"/delegation/delegation!toSnsPage.action",
+            "child":[]
+      },{
+            "menuName":"合同推送日志",
+            "level":"2",
+            "menuCode":"M010000011",
+            "title":"合同推送日志",
+            "link":"/contract/contract!toContractPushLog.action",
+            "child":[]
+      }]
+}], 访问的页面包含menuName值, 你没有访问该页面的权限<br/>
+<a href="#Output-920632751" onClick='toggleBox("Output-920632751", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-920632751" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-920632751">
+用户[lizhi4]是否有权限访问页面[系统管理：业务通知]【/notice/info-notice!noticeList.action】:true<br/>
+用户[lizhi4]是否无权限访问页面[系统管理：公告管理]【/ebid/notice/notice-manager!noticeQuery.action】:true<br/>
+用户[lizhi4]是否无权限访问页面[系统管理：系统通知]【/notice/sys-notice!noticeList.action】:true<br/>
+用户[lizhi4]是否无权限访问页面[系统管理：成员管理]【/sys/user/user-manage!queryUserList.action】:true<br/>
+用户[lizhi4]是否无权限访问页面[系统管理：部门管理]【/sys/dept/plat-dept!goDept.action】:true<br/>
+用户[lizhi4]是否无权限访问页面[系统管理：角色管理]【/sys/rolemanage/role-manage!toShowRoleList.action】:true<br/>
+用户[lizhi4]是否无权限访问页面[系统管理：集团管理]【/sys/subcompany/subcompany!toSubcompany.action】:true<br/>
+用户[lizhi4]是否无权限访问页面[系统管理：供方同步]【/supply/sync/supply-sync!toSync.action】:true<br/>
+用户[lizhi4]是否无权限访问页面[系统管理：供方同步日志]【/supply/sync/supply-sync!toSyncUpdate.action】:true<br/>
+用户[lizhi4]是否无权限访问页面[系统管理：短信日志查询]【/delegation/delegation!toSnsPage.action】:true<br/>
+用户[lizhi4]是否无权限访问页面[系统管理：合同推送日志]【/contract/contract!toContractPushLog.action】:true<br/>
+</div>
+</td>
+<td></td>
+<td>8</td>
+<td>com.auto.selenium.AuthTest@11438d26</td></tr>
+<tr>
+<td title='com.auto.selenium.AuthTest.testDataProvider()'><b>testDataProvider</b><br>Test class: com.auto.selenium.AuthTest<br>Parameters: 4, 系统管理：仅赋予成员管理权限，其余二级页面均不可访问, daixiaodan, 123458, lizhi4, 123458.0, cedarhdrole895080576451616768, [{
+      "menuName":"系统管理",
+      "level":"1",
+      "menuCode":"M010000000",
+      "link":"","title":"",
+      "child":[{
+            "menuName":"成员管理",
+            "level":"2",
+            "menuCode":"M010000004",
+            "title":"成员管理",
+            "link":"/sys/user/user-manage!queryUserList.action",
+            "child":[]
+      }]
+}], [{
+      "menuName":"系统管理",
+      "level":"1",
+      "menuCode":"M010000000",
+      "title":"",
+      "link":"",
+      "child":[{
+            "menuName":"公告管理",
+            "level":"2",
+            "menuCode":"M010000001",
+            "title":"公告管理",
+            "link":"/ebid/notice/notice-manager!noticeQuery.action",
+            "child":[]
+      },{
+            "menuName":"系统通知",
+            "level":"2",
+            "menuCode":"M010000002",
+            "title":"系统通知",
+            "link":"/notice/sys-notice!noticeList.action",
+            "child":[]
+      },{
+            "menuName":"业务通知",
+            "level":"2",
+            "menuCode":"M010000003",
+            "title":"业务通知",
+            "link":"/notice/info-notice!noticeList.action",
+            "child":[]
+      },{
+            "menuName":"部门管理",
+            "level":"2",
+            "menuCode":"M010000005",
+            "title":"部门管理",
+            "link":"/sys/dept/plat-dept!goDept.action",
+            "child":[]
+      },{
+            "menuName":"角色管理",
+            "level":"2",
+            "menuCode":"M010000006",
+            "title":"角色管理",
+            "link":"/sys/rolemanage/role-manage!toShowRoleList.action",
+            "child":[]
+      },{
+            "menuName":"集团管理",
+            "level":"2",
+            "menuCode":"M010000007",
+            "title":"下属公司信息",
+            "link":"/sys/subcompany/subcompany!toSubcompany.action",
+            "child":[]
+      },{
+            "menuName":"供方同步",
+            "level":"2",
+            "menuCode":"M010000008",
+            "title":"供方同步",
+            "link":"/supply/sync/supply-sync!toSync.action",
+            "child":[]
+      },{
+            "menuName":"供方同步日志",
+            "level":"2",
+            "menuCode":"M010000009",
+            "title":"供方同步日志",
+            "link":"/supply/sync/supply-sync!toSyncUpdate.action",
+            "child":[]
+      },{
+            "menuName":"短信日志查询",
+            "level":"2",
+            "menuCode":"M010000010",
+            "title":"短信日志查询",
+            "link":"/delegation/delegation!toSnsPage.action",
+            "child":[]
+      },{
+            "menuName":"合同推送日志",
+            "level":"2",
+            "menuCode":"M010000011",
+            "title":"合同推送日志",
+            "link":"/contract/contract!toContractPushLog.action",
+            "child":[]
+      }]
+}], 访问的页面包含menuName值, 你没有访问该页面的权限<br/>
+<a href="#Output-1900438403" onClick='toggleBox("Output-1900438403", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1900438403" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1900438403">
+用户[lizhi4]是否有权限访问页面[系统管理：成员管理]【/sys/user/user-manage!queryUserList.action】:true<br/>
+用户[lizhi4]是否无权限访问页面[系统管理：公告管理]【/ebid/notice/notice-manager!noticeQuery.action】:true<br/>
+用户[lizhi4]是否无权限访问页面[系统管理：系统通知]【/notice/sys-notice!noticeList.action】:true<br/>
+用户[lizhi4]是否无权限访问页面[系统管理：业务通知]【/notice/info-notice!noticeList.action】:true<br/>
+用户[lizhi4]是否无权限访问页面[系统管理：部门管理]【/sys/dept/plat-dept!goDept.action】:true<br/>
+用户[lizhi4]是否无权限访问页面[系统管理：角色管理]【/sys/rolemanage/role-manage!toShowRoleList.action】:true<br/>
+用户[lizhi4]是否无权限访问页面[系统管理：集团管理]【/sys/subcompany/subcompany!toSubcompany.action】:true<br/>
+用户[lizhi4]是否无权限访问页面[系统管理：供方同步]【/supply/sync/supply-sync!toSync.action】:true<br/>
+用户[lizhi4]是否无权限访问页面[系统管理：供方同步日志]【/supply/sync/supply-sync!toSyncUpdate.action】:true<br/>
+用户[lizhi4]是否无权限访问页面[系统管理：短信日志查询]【/delegation/delegation!toSnsPage.action】:true<br/>
+用户[lizhi4]是否无权限访问页面[系统管理：合同推送日志]【/contract/contract!toContractPushLog.action】:true<br/>
+</div>
+</td>
+<td></td>
+<td>8</td>
+<td>com.auto.selenium.AuthTest@11438d26</td></tr>
+<tr>
+<td title='com.auto.selenium.AuthTest.testDataProvider()'><b>testDataProvider</b><br>Test class: com.auto.selenium.AuthTest<br>Parameters: 5, 系统管理：仅赋予部门管理权限，其余二级页面均不可访问, daixiaodan, 123459, lizhi4, 123459.0, cedarhdrole895080576451616768, [{
+      "menuName":"系统管理",
+      "level":"1",
+      "menuCode":"M010000000",
+      "link":"","title":"",
+      "child":[{
+            "menuName":"部门管理",
+            "level":"2",
+            "menuCode":"M010000005",
+            "title":"部门管理",
+            "link":"/sys/dept/plat-dept!goDept.action",
+            "child":[]
+      }]
+}]
+
+, [{
+      "menuName":"系统管理",
+      "level":"1",
+      "menuCode":"M010000000",
+      "title":"",
+      "link":"",
+      "child":[{
+            "menuName":"公告管理",
+            "level":"2",
+            "menuCode":"M010000001",
+            "title":"公告管理",
+            "link":"/ebid/notice/notice-manager!noticeQuery.action",
+            "child":[]
+      },{
+            "menuName":"系统通知",
+            "level":"2",
+            "menuCode":"M010000002",
+            "title":"系统通知",
+            "link":"/notice/sys-notice!noticeList.action",
+            "child":[]
+      },{
+            "menuName":"业务通知",
+            "level":"2",
+            "menuCode":"M010000003",
+            "title":"业务通知",
+            "link":"/notice/info-notice!noticeList.action",
+            "child":[]
+      },{
+            "menuName":"成员管理",
+            "level":"2",
+            "menuCode":"M010000004",
+            "title":"成员管理",
+            "link":"/sys/user/user-manage!queryUserList.action",
+            "child":[]
+      },{
+            "menuName":"角色管理",
+            "level":"2",
+            "menuCode":"M010000006",
+            "title":"角色管理",
+            "link":"/sys/rolemanage/role-manage!toShowRoleList.action",
+            "child":[]
+      },{
+            "menuName":"集团管理",
+            "level":"2",
+            "menuCode":"M010000007",
+            "title":"下属公司信息",
+            "link":"/sys/subcompany/subcompany!toSubcompany.action",
+            "child":[]
+      },{
+            "menuName":"供方同步",
+            "level":"2",
+            "menuCode":"M010000008",
+            "title":"供方同步",
+            "link":"/supply/sync/supply-sync!toSync.action",
+            "child":[]
+      },{
+            "menuName":"供方同步日志",
+            "level":"2",
+            "menuCode":"M010000009",
+            "title":"供方同步日志",
+            "link":"/supply/sync/supply-sync!toSyncUpdate.action",
+            "child":[]
+      },{
+            "menuName":"短信日志查询",
+            "level":"2",
+            "menuCode":"M010000010",
+            "title":"短信日志查询",
+            "link":"/delegation/delegation!toSnsPage.action",
+            "child":[]
+      },{
+            "menuName":"合同推送日志",
+            "level":"2",
+            "menuCode":"M010000011",
+            "title":"合同推送日志",
+            "link":"/contract/contract!toContractPushLog.action",
+            "child":[]
+      }]
+}], 访问的页面包含menuName值, 你没有访问该页面的权限<br/>
+<a href="#Output-311559967" onClick='toggleBox("Output-311559967", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-311559967" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-311559967">
+用户[lizhi4]是否有权限访问页面[系统管理：部门管理]【/sys/dept/plat-dept!goDept.action】:true<br/>
+用户[lizhi4]是否无权限访问页面[系统管理：公告管理]【/ebid/notice/notice-manager!noticeQuery.action】:true<br/>
+用户[lizhi4]是否无权限访问页面[系统管理：系统通知]【/notice/sys-notice!noticeList.action】:true<br/>
+用户[lizhi4]是否无权限访问页面[系统管理：业务通知]【/notice/info-notice!noticeList.action】:true<br/>
+用户[lizhi4]是否无权限访问页面[系统管理：成员管理]【/sys/user/user-manage!queryUserList.action】:true<br/>
+用户[lizhi4]是否无权限访问页面[系统管理：角色管理]【/sys/rolemanage/role-manage!toShowRoleList.action】:true<br/>
+用户[lizhi4]是否无权限访问页面[系统管理：集团管理]【/sys/subcompany/subcompany!toSubcompany.action】:true<br/>
+用户[lizhi4]是否无权限访问页面[系统管理：供方同步]【/supply/sync/supply-sync!toSync.action】:true<br/>
+用户[lizhi4]是否无权限访问页面[系统管理：供方同步日志]【/supply/sync/supply-sync!toSyncUpdate.action】:true<br/>
+用户[lizhi4]是否无权限访问页面[系统管理：短信日志查询]【/delegation/delegation!toSnsPage.action】:true<br/>
+用户[lizhi4]是否无权限访问页面[系统管理：合同推送日志]【/contract/contract!toContractPushLog.action】:true<br/>
+</div>
+</td>
+<td></td>
+<td>9</td>
+<td>com.auto.selenium.AuthTest@11438d26</td></tr>
+<tr>
+<td title='com.auto.selenium.AuthTest.testDataProvider()'><b>testDataProvider</b><br>Test class: com.auto.selenium.AuthTest<br>Parameters: 6, 系统管理：仅赋予角色管理权限，其余二级页面均不可访问, daixiaodan, 123460, lizhi4, 123460.0, cedarhdrole895080576451616768, [{
+      "menuName":"系统管理",
+      "level":"1",
+      "menuCode":"M010000000",
+      "link":"","title":"",
+      "child":[{
+            "menuName":"角色管理",
+            "level":"2",
+            "menuCode":"M010000006",
+            "title":"角色管理",
+            "link":"/sys/rolemanage/role-manage!toShowRoleList.action",
+            "child":[]
+      }]
+}], [{
+      "menuName":"系统管理",
+      "level":"1",
+      "menuCode":"M010000000",
+      "title":"",
+      "link":"",
+      "child":[{
+            "menuName":"公告管理",
+            "level":"2",
+            "menuCode":"M010000001",
+            "title":"公告管理",
+            "link":"/ebid/notice/notice-manager!noticeQuery.action",
+            "child":[]
+      },{
+            "menuName":"系统通知",
+            "level":"2",
+            "menuCode":"M010000002",
+            "title":"系统通知",
+            "link":"/notice/sys-notice!noticeList.action",
+            "child":[]
+      },{
+            "menuName":"业务通知",
+            "level":"2",
+            "menuCode":"M010000003",
+            "title":"业务通知",
+            "link":"/notice/info-notice!noticeList.action",
+            "child":[]
+      },{
+            "menuName":"成员管理",
+            "level":"2",
+            "menuCode":"M010000004",
+            "title":"成员管理",
+            "link":"/sys/user/user-manage!queryUserList.action",
+            "child":[]
+      },{
+            "menuName":"部门管理",
+            "level":"2",
+            "menuCode":"M010000005",
+            "title":"部门管理",
+            "link":"/sys/dept/plat-dept!goDept.action",
+            "child":[]
+      },{
+            "menuName":"集团管理",
+            "level":"2",
+            "menuCode":"M010000007",
+            "title":"下属公司信息",
+            "link":"/sys/subcompany/subcompany!toSubcompany.action",
+            "child":[]
+      },{
+            "menuName":"供方同步",
+            "level":"2",
+            "menuCode":"M010000008",
+            "title":"供方同步",
+            "link":"/supply/sync/supply-sync!toSync.action",
+            "child":[]
+      },{
+            "menuName":"供方同步日志",
+            "level":"2",
+            "menuCode":"M010000009",
+            "title":"供方同步日志",
+            "link":"/supply/sync/supply-sync!toSyncUpdate.action",
+            "child":[]
+      },{
+            "menuName":"短信日志查询",
+            "level":"2",
+            "menuCode":"M010000010",
+            "title":"短信日志查询",
+            "link":"/delegation/delegation!toSnsPage.action",
+            "child":[]
+      },{
+            "menuName":"合同推送日志",
+            "level":"2",
+            "menuCode":"M010000011",
+            "title":"合同推送日志",
+            "link":"/contract/contract!toContractPushLog.action",
+            "child":[]
+      }]
+}], 访问的页面包含menuName值, 你没有访问该页面的权限<br/>
+<a href="#Output-1570228900" onClick='toggleBox("Output-1570228900", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1570228900" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1570228900">
+用户[lizhi4]是否有权限访问页面[系统管理：角色管理]【/sys/rolemanage/role-manage!toShowRoleList.action】:true<br/>
+用户[lizhi4]是否无权限访问页面[系统管理：公告管理]【/ebid/notice/notice-manager!noticeQuery.action】:true<br/>
+用户[lizhi4]是否无权限访问页面[系统管理：系统通知]【/notice/sys-notice!noticeList.action】:true<br/>
+用户[lizhi4]是否无权限访问页面[系统管理：业务通知]【/notice/info-notice!noticeList.action】:true<br/>
+用户[lizhi4]是否无权限访问页面[系统管理：成员管理]【/sys/user/user-manage!queryUserList.action】:true<br/>
+用户[lizhi4]是否无权限访问页面[系统管理：部门管理]【/sys/dept/plat-dept!goDept.action】:true<br/>
+用户[lizhi4]是否无权限访问页面[系统管理：集团管理]【/sys/subcompany/subcompany!toSubcompany.action】:true<br/>
+用户[lizhi4]是否无权限访问页面[系统管理：供方同步]【/supply/sync/supply-sync!toSync.action】:true<br/>
+用户[lizhi4]是否无权限访问页面[系统管理：供方同步日志]【/supply/sync/supply-sync!toSyncUpdate.action】:true<br/>
+用户[lizhi4]是否无权限访问页面[系统管理：短信日志查询]【/delegation/delegation!toSnsPage.action】:true<br/>
+用户[lizhi4]是否无权限访问页面[系统管理：合同推送日志]【/contract/contract!toContractPushLog.action】:true<br/>
+</div>
+</td>
+<td></td>
+<td>9</td>
+<td>com.auto.selenium.AuthTest@11438d26</td></tr>
+<tr>
+<td title='com.auto.selenium.AuthTest.testDataProvider()'><b>testDataProvider</b><br>Test class: com.auto.selenium.AuthTest<br>Parameters: 7, 系统管理：仅赋予集团管理权限，其余二级页面均不可访问, daixiaodan, 123461, lizhi4, 123461.0, cedarhdrole895080576451616768, [{
+      "menuName":"系统管理",
+      "level":"1",
+      "menuCode":"M010000000",
+      "link":"","title":"",
+      "child":[{
+            "menuName":"集团管理",
+            "level":"2",
+            "menuCode":"M010000007",
+            "title":"下属公司信息",
+            "link":"/sys/subcompany/subcompany!toSubcompany.action",
+            "child":[]
+      }]
+}]
+
+, [{
+      "menuName":"系统管理",
+      "level":"1",
+      "menuCode":"M010000000",
+      "title":"",
+      "link":"",
+      "child":[{
+            "menuName":"公告管理",
+            "level":"2",
+            "menuCode":"M010000001",
+            "title":"公告管理",
+            "link":"/ebid/notice/notice-manager!noticeQuery.action",
+            "child":[]
+      },{
+            "menuName":"系统通知",
+            "level":"2",
+            "menuCode":"M010000002",
+            "title":"系统通知",
+            "link":"/notice/sys-notice!noticeList.action",
+            "child":[]
+      },{
+            "menuName":"业务通知",
+            "level":"2",
+            "menuCode":"M010000003",
+            "title":"业务通知",
+            "link":"/notice/info-notice!noticeList.action",
+            "child":[]
+      },{
+            "menuName":"成员管理",
+            "level":"2",
+            "menuCode":"M010000004",
+            "title":"成员管理",
+            "link":"/sys/user/user-manage!queryUserList.action",
+            "child":[]
+      },{
+            "menuName":"部门管理",
+            "level":"2",
+            "menuCode":"M010000005",
+            "title":"部门管理",
+            "link":"/sys/dept/plat-dept!goDept.action",
+            "child":[]
+      },{
+            "menuName":"角色管理",
+            "level":"2",
+            "menuCode":"M010000006",
+            "title":"角色管理",
+            "link":"/sys/rolemanage/role-manage!toShowRoleList.action",
+            "child":[]
+      },{
+            "menuName":"供方同步",
+            "level":"2",
+            "menuCode":"M010000008",
+            "title":"供方同步",
+            "link":"/supply/sync/supply-sync!toSync.action",
+            "child":[]
+      },{
+            "menuName":"供方同步日志",
+            "level":"2",
+            "menuCode":"M010000009",
+            "title":"供方同步日志",
+            "link":"/supply/sync/supply-sync!toSyncUpdate.action",
+            "child":[]
+      },{
+            "menuName":"短信日志查询",
+            "level":"2",
+            "menuCode":"M010000010",
+            "title":"短信日志查询",
+            "link":"/delegation/delegation!toSnsPage.action",
+            "child":[]
+      },{
+            "menuName":"合同推送日志",
+            "level":"2",
+            "menuCode":"M010000011",
+            "title":"合同推送日志",
+            "link":"/contract/contract!toContractPushLog.action",
+            "child":[]
+      }]
+}], 访问的页面包含menuName值, 你没有访问该页面的权限<br/>
+<a href="#Output-307036850" onClick='toggleBox("Output-307036850", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-307036850" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-307036850">
+用户[lizhi4]是否有权限访问页面[系统管理：集团管理]【/sys/subcompany/subcompany!toSubcompany.action】:true<br/>
+用户[lizhi4]是否无权限访问页面[系统管理：公告管理]【/ebid/notice/notice-manager!noticeQuery.action】:true<br/>
+用户[lizhi4]是否无权限访问页面[系统管理：系统通知]【/notice/sys-notice!noticeList.action】:true<br/>
+用户[lizhi4]是否无权限访问页面[系统管理：业务通知]【/notice/info-notice!noticeList.action】:true<br/>
+用户[lizhi4]是否无权限访问页面[系统管理：成员管理]【/sys/user/user-manage!queryUserList.action】:true<br/>
+用户[lizhi4]是否无权限访问页面[系统管理：部门管理]【/sys/dept/plat-dept!goDept.action】:true<br/>
+用户[lizhi4]是否无权限访问页面[系统管理：角色管理]【/sys/rolemanage/role-manage!toShowRoleList.action】:true<br/>
+用户[lizhi4]是否无权限访问页面[系统管理：供方同步]【/supply/sync/supply-sync!toSync.action】:true<br/>
+用户[lizhi4]是否无权限访问页面[系统管理：供方同步日志]【/supply/sync/supply-sync!toSyncUpdate.action】:true<br/>
+用户[lizhi4]是否无权限访问页面[系统管理：短信日志查询]【/delegation/delegation!toSnsPage.action】:true<br/>
+用户[lizhi4]是否无权限访问页面[系统管理：合同推送日志]【/contract/contract!toContractPushLog.action】:true<br/>
+</div>
+</td>
+<td></td>
+<td>21</td>
+<td>com.auto.selenium.AuthTest@11438d26</td></tr>
+<tr>
+<td title='com.auto.selenium.AuthTest.testDataProvider()'><b>testDataProvider</b><br>Test class: com.auto.selenium.AuthTest<br>Parameters: 8, 系统管理：仅赋予供方同步权限，其余二级页面均不可访问, daixiaodan, 123462, lizhi4, 123462.0, cedarhdrole895080576451616768, [{
+      "menuName":"系统管理",
+      "level":"1",
+      "menuCode":"M010000000",
+      "link":"","title":"",
+      "child":[{
+            "menuName":"供方同步",
+            "level":"2",
+            "menuCode":"M010000008",
+            "title":"供方同步",
+            "link":"/supply/sync/supply-sync!toSync.action",
+            "child":[]
+      }]
+}], [{
+      "menuName":"系统管理",
+      "level":"1",
+      "menuCode":"M010000000",
+      "title":"",
+      "link":"",
+      "child":[{
+            "menuName":"公告管理",
+            "level":"2",
+            "menuCode":"M010000001",
+            "title":"公告管理",
+            "link":"/ebid/notice/notice-manager!noticeQuery.action",
+            "child":[]
+      },{
+            "menuName":"系统通知",
+            "level":"2",
+            "menuCode":"M010000002",
+            "title":"系统通知",
+            "link":"/notice/sys-notice!noticeList.action",
+            "child":[]
+      },{
+            "menuName":"业务通知",
+            "level":"2",
+            "menuCode":"M010000003",
+            "title":"业务通知",
+            "link":"/notice/info-notice!noticeList.action",
+            "child":[]
+      },{
+            "menuName":"成员管理",
+            "level":"2",
+            "menuCode":"M010000004",
+            "title":"成员管理",
+            "link":"/sys/user/user-manage!queryUserList.action",
+            "child":[]
+      },{
+            "menuName":"部门管理",
+            "level":"2",
+            "menuCode":"M010000005",
+            "title":"部门管理",
+            "link":"/sys/dept/plat-dept!goDept.action",
+            "child":[]
+      },{
+            "menuName":"角色管理",
+            "level":"2",
+            "menuCode":"M010000006",
+            "title":"角色管理",
+            "link":"/sys/rolemanage/role-manage!toShowRoleList.action",
+            "child":[]
+      },{
+            "menuName":"集团管理",
+            "level":"2",
+            "menuCode":"M010000007",
+            "title":"下属公司信息",
+            "link":"/sys/subcompany/subcompany!toSubcompany.action",
+            "child":[]
+      },{
+            "menuName":"供方同步日志",
+            "level":"2",
+            "menuCode":"M010000009",
+            "title":"供方同步日志",
+            "link":"/supply/sync/supply-sync!toSyncUpdate.action",
+            "child":[]
+      },{
+            "menuName":"短信日志查询",
+            "level":"2",
+            "menuCode":"M010000010",
+            "title":"短信日志查询",
+            "link":"/delegation/delegation!toSnsPage.action",
+            "child":[]
+      },{
+            "menuName":"合同推送日志",
+            "level":"2",
+            "menuCode":"M010000011",
+            "title":"合同推送日志",
+            "link":"/contract/contract!toContractPushLog.action",
+            "child":[]
+      }]
+}], 访问的页面包含menuName值, 你没有访问该页面的权限<br/>
+<a href="#Output-453940999" onClick='toggleBox("Output-453940999", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-453940999" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-453940999">
+用户[lizhi4]是否有权限访问页面[系统管理：供方同步]【/supply/sync/supply-sync!toSync.action】:true<br/>
+用户[lizhi4]是否无权限访问页面[系统管理：公告管理]【/ebid/notice/notice-manager!noticeQuery.action】:true<br/>
+用户[lizhi4]是否无权限访问页面[系统管理：系统通知]【/notice/sys-notice!noticeList.action】:true<br/>
+用户[lizhi4]是否无权限访问页面[系统管理：业务通知]【/notice/info-notice!noticeList.action】:true<br/>
+用户[lizhi4]是否无权限访问页面[系统管理：成员管理]【/sys/user/user-manage!queryUserList.action】:true<br/>
+用户[lizhi4]是否无权限访问页面[系统管理：部门管理]【/sys/dept/plat-dept!goDept.action】:true<br/>
+用户[lizhi4]是否无权限访问页面[系统管理：角色管理]【/sys/rolemanage/role-manage!toShowRoleList.action】:true<br/>
+用户[lizhi4]是否无权限访问页面[系统管理：集团管理]【/sys/subcompany/subcompany!toSubcompany.action】:true<br/>
+用户[lizhi4]是否无权限访问页面[系统管理：供方同步日志]【/supply/sync/supply-sync!toSyncUpdate.action】:true<br/>
+用户[lizhi4]是否无权限访问页面[系统管理：短信日志查询]【/delegation/delegation!toSnsPage.action】:true<br/>
+用户[lizhi4]是否无权限访问页面[系统管理：合同推送日志]【/contract/contract!toContractPushLog.action】:true<br/>
+</div>
+</td>
+<td></td>
+<td>11</td>
+<td>com.auto.selenium.AuthTest@11438d26</td></tr>
+<tr>
+<td title='com.auto.selenium.AuthTest.testDataProvider()'><b>testDataProvider</b><br>Test class: com.auto.selenium.AuthTest<br>Parameters: 9, 系统管理：仅赋予供方同步日志权限，其余二级页面均不可访问, daixiaodan, 123463, lizhi4, 123463.0, cedarhdrole895080576451616768, [{
+      "menuName":"系统管理",
+      "level":"1",
+      "menuCode":"M010000000",
+      "link":"","title":"",
+      "child":[{
+            "menuName":"供方同步日志",
+            "level":"2",
+            "menuCode":"M010000009",
+            "title":"供方同步日志",
+            "link":"/supply/sync/supply-sync!toSyncUpdate.action",
+            "child":[]
+      }]
+}], [{
+      "menuName":"系统管理",
+      "level":"1",
+      "menuCode":"M010000000",
+      "title":"",
+      "link":"",
+      "child":[{
+            "menuName":"公告管理",
+            "level":"2",
+            "menuCode":"M010000001",
+            "title":"公告管理",
+            "link":"/ebid/notice/notice-manager!noticeQuery.action",
+            "child":[]
+      },{
+            "menuName":"系统通知",
+            "level":"2",
+            "menuCode":"M010000002",
+            "title":"系统通知",
+            "link":"/notice/sys-notice!noticeList.action",
+            "child":[]
+      },{
+            "menuName":"业务通知",
+            "level":"2",
+            "menuCode":"M010000003",
+            "title":"业务通知",
+            "link":"/notice/info-notice!noticeList.action",
+            "child":[]
+      },{
+            "menuName":"成员管理",
+            "level":"2",
+            "menuCode":"M010000004",
+            "title":"成员管理",
+            "link":"/sys/user/user-manage!queryUserList.action",
+            "child":[]
+      },{
+            "menuName":"部门管理",
+            "level":"2",
+            "menuCode":"M010000005",
+            "title":"部门管理",
+            "link":"/sys/dept/plat-dept!goDept.action",
+            "child":[]
+      },{
+            "menuName":"角色管理",
+            "level":"2",
+            "menuCode":"M010000006",
+            "title":"角色管理",
+            "link":"/sys/rolemanage/role-manage!toShowRoleList.action",
+            "child":[]
+      },{
+            "menuName":"集团管理",
+            "level":"2",
+            "menuCode":"M010000007",
+            "title":"下属公司信息",
+            "link":"/sys/subcompany/subcompany!toSubcompany.action",
+            "child":[]
+      },{
+            "menuName":"供方同步",
+            "level":"2",
+            "menuCode":"M010000008",
+            "title":"供方同步",
+            "link":"/supply/sync/supply-sync!toSync.action",
+            "child":[]
+      },{
+            "menuName":"短信日志查询",
+            "level":"2",
+            "menuCode":"M010000010",
+            "title":"短信日志查询",
+            "link":"/delegation/delegation!toSnsPage.action",
+            "child":[]
+      },{
+            "menuName":"合同推送日志",
+            "level":"2",
+            "menuCode":"M010000011",
+            "title":"合同推送日志",
+            "link":"/contract/contract!toContractPushLog.action",
+            "child":[]
+      }]
+}], 访问的页面包含menuName值, 你没有访问该页面的权限<br/>
+<a href="#Output-918475642" onClick='toggleBox("Output-918475642", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-918475642" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-918475642">
+用户[lizhi4]是否有权限访问页面[系统管理：供方同步日志]【/supply/sync/supply-sync!toSyncUpdate.action】:true<br/>
+用户[lizhi4]是否无权限访问页面[系统管理：公告管理]【/ebid/notice/notice-manager!noticeQuery.action】:true<br/>
+用户[lizhi4]是否无权限访问页面[系统管理：系统通知]【/notice/sys-notice!noticeList.action】:true<br/>
+用户[lizhi4]是否无权限访问页面[系统管理：业务通知]【/notice/info-notice!noticeList.action】:true<br/>
+用户[lizhi4]是否无权限访问页面[系统管理：成员管理]【/sys/user/user-manage!queryUserList.action】:true<br/>
+用户[lizhi4]是否无权限访问页面[系统管理：部门管理]【/sys/dept/plat-dept!goDept.action】:true<br/>
+用户[lizhi4]是否无权限访问页面[系统管理：角色管理]【/sys/rolemanage/role-manage!toShowRoleList.action】:true<br/>
+用户[lizhi4]是否无权限访问页面[系统管理：集团管理]【/sys/subcompany/subcompany!toSubcompany.action】:true<br/>
+用户[lizhi4]是否无权限访问页面[系统管理：供方同步]【/supply/sync/supply-sync!toSync.action】:true<br/>
+用户[lizhi4]是否无权限访问页面[系统管理：短信日志查询]【/delegation/delegation!toSnsPage.action】:true<br/>
+用户[lizhi4]是否无权限访问页面[系统管理：合同推送日志]【/contract/contract!toContractPushLog.action】:true<br/>
+</div>
+</td>
+<td></td>
+<td>8</td>
+<td>com.auto.selenium.AuthTest@11438d26</td></tr>
+<tr>
+<td title='com.auto.selenium.AuthTest.testDataProvider()'><b>testDataProvider</b><br>Test class: com.auto.selenium.AuthTest<br>Parameters: 10, 系统管理：仅赋予短信日志查询权限，其余二级页面均不可访问, daixiaodan, 123464, lizhi4, 123464.0, cedarhdrole895080576451616768, [{
+      "menuName":"系统管理",
+      "level":"1",
+      "menuCode":"M010000000",
+      "link":"","title":"",
+      "child":[{
+            "menuName":"短信日志查询",
+            "level":"2",
+            "menuCode":"M010000010",
+            "title":"短信日志查询",
+            "link":"/delegation/delegation!toSnsPage.action",
+            "child":[]
+      }]
+}], [{
+      "menuName":"系统管理",
+      "level":"1",
+      "menuCode":"M010000000",
+      "title":"",
+      "link":"",
+      "child":[{
+            "menuName":"公告管理",
+            "level":"2",
+            "menuCode":"M010000001",
+            "title":"公告管理",
+            "link":"/ebid/notice/notice-manager!noticeQuery.action",
+            "child":[]
+      },{
+            "menuName":"系统通知",
+            "level":"2",
+            "menuCode":"M010000002",
+            "title":"系统通知",
+            "link":"/notice/sys-notice!noticeList.action",
+            "child":[]
+      },{
+            "menuName":"业务通知",
+            "level":"2",
+            "menuCode":"M010000003",
+            "title":"业务通知",
+            "link":"/notice/info-notice!noticeList.action",
+            "child":[]
+      },{
+            "menuName":"成员管理",
+            "level":"2",
+            "menuCode":"M010000004",
+            "title":"成员管理",
+            "link":"/sys/user/user-manage!queryUserList.action",
+            "child":[]
+      },{
+            "menuName":"部门管理",
+            "level":"2",
+            "menuCode":"M010000005",
+            "title":"部门管理",
+            "link":"/sys/dept/plat-dept!goDept.action",
+            "child":[]
+      },{
+            "menuName":"角色管理",
+            "level":"2",
+            "menuCode":"M010000006",
+            "title":"角色管理",
+            "link":"/sys/rolemanage/role-manage!toShowRoleList.action",
+            "child":[]
+      },{
+            "menuName":"集团管理",
+            "level":"2",
+            "menuCode":"M010000007",
+            "title":"下属公司信息",
+            "link":"/sys/subcompany/subcompany!toSubcompany.action",
+            "child":[]
+      },{
+            "menuName":"供方同步",
+            "level":"2",
+            "menuCode":"M010000008",
+            "title":"供方同步",
+            "link":"/supply/sync/supply-sync!toSync.action",
+            "child":[]
+      },{
+            "menuName":"供方同步日志",
+            "level":"2",
+            "menuCode":"M010000009",
+            "title":"供方同步日志",
+            "link":"/supply/sync/supply-sync!toSyncUpdate.action",
+            "child":[]
+      },{
+            "menuName":"合同推送日志",
+            "level":"2",
+            "menuCode":"M010000011",
+            "title":"合同推送日志",
+            "link":"/contract/contract!toContractPushLog.action",
+            "child":[]
+      }]
+}], 访问的页面包含menuName值, 你没有访问该页面的权限<br/>
+<a href="#Output-1955991197" onClick='toggleBox("Output-1955991197", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1955991197" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1955991197">
+用户[lizhi4]是否有权限访问页面[系统管理：短信日志查询]【/delegation/delegation!toSnsPage.action】:true<br/>
+用户[lizhi4]是否无权限访问页面[系统管理：公告管理]【/ebid/notice/notice-manager!noticeQuery.action】:true<br/>
+用户[lizhi4]是否无权限访问页面[系统管理：系统通知]【/notice/sys-notice!noticeList.action】:true<br/>
+用户[lizhi4]是否无权限访问页面[系统管理：业务通知]【/notice/info-notice!noticeList.action】:true<br/>
+用户[lizhi4]是否无权限访问页面[系统管理：成员管理]【/sys/user/user-manage!queryUserList.action】:true<br/>
+用户[lizhi4]是否无权限访问页面[系统管理：部门管理]【/sys/dept/plat-dept!goDept.action】:true<br/>
+用户[lizhi4]是否无权限访问页面[系统管理：角色管理]【/sys/rolemanage/role-manage!toShowRoleList.action】:true<br/>
+用户[lizhi4]是否无权限访问页面[系统管理：集团管理]【/sys/subcompany/subcompany!toSubcompany.action】:true<br/>
+用户[lizhi4]是否无权限访问页面[系统管理：供方同步]【/supply/sync/supply-sync!toSync.action】:true<br/>
+用户[lizhi4]是否无权限访问页面[系统管理：供方同步日志]【/supply/sync/supply-sync!toSyncUpdate.action】:true<br/>
+用户[lizhi4]是否无权限访问页面[系统管理：合同推送日志]【/contract/contract!toContractPushLog.action】:true<br/>
+</div>
+</td>
+<td></td>
+<td>9</td>
+<td>com.auto.selenium.AuthTest@11438d26</td></tr>
+<tr>
+<td title='com.auto.selenium.AuthTest.testDataProvider()'><b>testDataProvider</b><br>Test class: com.auto.selenium.AuthTest<br>Parameters: 11, 系统管理：仅赋予合同推送日志权限，其余二级页面均不可访问, daixiaodan, 123465, lizhi4, 123465.0, cedarhdrole895080576451616768, [{
+      "menuName":"系统管理",
+      "level":"1",
+      "menuCode":"M010000000",
+      "link":"","title":"",
+      "child":[{
+            "menuName":"合同推送日志",
+            "level":"2",
+            "menuCode":"M010000011",
+            "title":"合同推送日志",
+            "link":"/contract/contract!toContractPushLog.action",
+            "child":[]
+      }]
+}], [{
+      "menuName":"系统管理",
+      "level":"1",
+      "menuCode":"M010000000",
+      "title":"",
+      "link":"",
+      "child":[{
+            "menuName":"公告管理",
+            "level":"2",
+            "menuCode":"M010000001",
+            "title":"公告管理",
+            "link":"/ebid/notice/notice-manager!noticeQuery.action",
+            "child":[]
+      },{
+            "menuName":"系统通知",
+            "level":"2",
+            "menuCode":"M010000002",
+            "title":"系统通知",
+            "link":"/notice/sys-notice!noticeList.action",
+            "child":[]
+      },{
+            "menuName":"业务通知",
+            "level":"2",
+            "menuCode":"M010000003",
+            "title":"业务通知",
+            "link":"/notice/info-notice!noticeList.action",
+            "child":[]
+      },{
+            "menuName":"成员管理",
+            "level":"2",
+            "menuCode":"M010000004",
+            "title":"成员管理",
+            "link":"/sys/user/user-manage!queryUserList.action",
+            "child":[]
+      },{
+            "menuName":"部门管理",
+            "level":"2",
+            "menuCode":"M010000005",
+            "title":"部门管理",
+            "link":"/sys/dept/plat-dept!goDept.action",
+            "child":[]
+      },{
+            "menuName":"角色管理",
+            "level":"2",
+            "menuCode":"M010000006",
+            "title":"角色管理",
+            "link":"/sys/rolemanage/role-manage!toShowRoleList.action",
+            "child":[]
+      },{
+            "menuName":"集团管理",
+            "level":"2",
+            "menuCode":"M010000007",
+            "title":"下属公司信息",
+            "link":"/sys/subcompany/subcompany!toSubcompany.action",
+            "child":[]
+      },{
+            "menuName":"供方同步",
+            "level":"2",
+            "menuCode":"M010000008",
+            "title":"供方同步",
+            "link":"/supply/sync/supply-sync!toSync.action",
+            "child":[]
+      },{
+            "menuName":"供方同步日志",
+            "level":"2",
+            "menuCode":"M010000009",
+            "title":"供方同步日志",
+            "link":"/supply/sync/supply-sync!toSyncUpdate.action",
+            "child":[]
+      },{
+            "menuName":"短信日志查询",
+            "level":"2",
+            "menuCode":"M010000010",
+            "title":"短信日志查询",
+            "link":"/delegation/delegation!toSnsPage.action",
+            "child":[]
+      }]
+}], 访问的页面包含menuName值, 你没有访问该页面的权限<br/>
+<a href="#Output-1997028929" onClick='toggleBox("Output-1997028929", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1997028929" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1997028929">
+用户[lizhi4]是否有权限访问页面[系统管理：合同推送日志]【/contract/contract!toContractPushLog.action】:true<br/>
+用户[lizhi4]是否无权限访问页面[系统管理：公告管理]【/ebid/notice/notice-manager!noticeQuery.action】:true<br/>
+用户[lizhi4]是否无权限访问页面[系统管理：系统通知]【/notice/sys-notice!noticeList.action】:true<br/>
+用户[lizhi4]是否无权限访问页面[系统管理：业务通知]【/notice/info-notice!noticeList.action】:true<br/>
+用户[lizhi4]是否无权限访问页面[系统管理：成员管理]【/sys/user/user-manage!queryUserList.action】:true<br/>
+用户[lizhi4]是否无权限访问页面[系统管理：部门管理]【/sys/dept/plat-dept!goDept.action】:true<br/>
+用户[lizhi4]是否无权限访问页面[系统管理：角色管理]【/sys/rolemanage/role-manage!toShowRoleList.action】:true<br/>
+用户[lizhi4]是否无权限访问页面[系统管理：集团管理]【/sys/subcompany/subcompany!toSubcompany.action】:true<br/>
+用户[lizhi4]是否无权限访问页面[系统管理：供方同步]【/supply/sync/supply-sync!toSync.action】:true<br/>
+用户[lizhi4]是否无权限访问页面[系统管理：供方同步日志]【/supply/sync/supply-sync!toSyncUpdate.action】:true<br/>
+用户[lizhi4]是否无权限访问页面[系统管理：短信日志查询]【/delegation/delegation!toSnsPage.action】:true<br/>
+</div>
+</td>
+<td></td>
+<td>9</td>
+<td>com.auto.selenium.AuthTest@11438d26</td></tr>
+</table><p>
+</body>
+</html>
