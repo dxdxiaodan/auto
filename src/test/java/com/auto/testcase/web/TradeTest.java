@@ -51,6 +51,7 @@ public class TradeTest {
     public void enterTradePage(){
         //log.info("打开首页");
         desktopNavPage.open(driver);
+        desktopNavPage.sleep(500);
         //log.info("点击Markets");
         desktopNavPage.clickMarketsBtn(driver);
         //log.info("等待跳转Markets");
@@ -97,20 +98,6 @@ public class TradeTest {
         Assert.assertNotEquals(0L,rowResult);
     }
 
-    @Test(description = "点击CRO/USDC对应数据的trade按钮，正确跳往trade页面")
-    public void testTradeJump(){
-        String navName = "USDC";
-        marketsPage.enterMarketsNavPage(driver,navName);
-        String searchKey = "CRO/USDC";
-        String searchKey1 = "CRO_USDC";
-        Long rowResult = marketsPage.getSearchRow(driver, searchKey);
-        Reporter.log(String.format("%s 对应表格行数: %s",searchKey,rowResult));
-        marketsPage.clickTradeBtnByRow(driver,rowResult.intValue());
-        marketsPage.sleep(10000);
-        //等待链接跳转
-        WebDriverWait webDriverWait = new WebDriverWait(driver, 100);
-        webDriverWait.until(ExpectedConditions.urlContains(searchKey1));
-    }
 
     /**
      *测试在USDC页查询不存在的Instrument，是否会提示"No Records"
@@ -157,7 +144,7 @@ public class TradeTest {
         Long exceptCount = 38L;
         marketsPage.enterMarketsNavPage(driver,navName);
         Long rowResult = marketsPage.getRowCount(driver);
-        Reporter.log(String.format("Markets-%s ,预期数量为: %s ,实际查询出来的数量为:",navName,exceptCount,rowResult));
+        Reporter.log(String.format("Markets-%s ,预期数量为: %s ,实际查询出来的数量为: %s",navName,exceptCount,rowResult));
         Assert.assertEquals(exceptCount,rowResult);
     }
     /*@DataProvider(name = "InstrumentTestData")

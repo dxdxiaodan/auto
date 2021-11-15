@@ -8,7 +8,6 @@
                     <include name="enterTradePage" description="从首页进入Markets-USDC页，点击CRO/USDC数据对应的按钮，进入trade页面"/>
                     <include name="enterMarketsNavPage" description="测试是否已点击Markets-USDC导航"/>
                     <include name="testFindData" description="成功找到CRO/USDC数据"/>
-                    <include name="testTradeJump" description="点击CRO/USDC对应数据的trade按钮，正确跳往trade页面"/>
                     <include name="searchNoExistKey" description="测试在USDC页查询不存在的Instrument，是否会提示 No Records"/>
                     <include name="searchExistKey" description="测试在USDC页查询存在的Instrument 关键字 USD，是否列出所有包含USD的Instrument 关键字"/>
                     <include name="checkRowCount" description="进入Markets-USDC页，测试数据数量是否符合预设值"/>

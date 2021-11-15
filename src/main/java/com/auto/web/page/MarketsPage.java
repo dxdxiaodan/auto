@@ -132,7 +132,6 @@ public class MarketsPage extends BasePage{
     public void searchKey(WebDriver driver, String searchKey){
         WebElement element = super.getElement(driver, ElementTypeKeyUtil.CSS_SELECTOR, searchBtn);
         element.sendKeys(searchKey);
-        element.sendKeys(Keys.ENTER);
     }
 
     /**
