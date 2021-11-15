@@ -1,0 +1,6 @@
+env:
+  active: local
+  local:
+    fileName: application-local.yaml
+  test:
+    fileName: application-test.yaml

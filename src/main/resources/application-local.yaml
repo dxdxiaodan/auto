@@ -1,23 +1,21 @@
 webdriver:
   chrome:
     driver: webdriver.chrome.driver
-    driver-path: G:\study\webDriver\bin\chromedriver89.exe
+    driver-path: M:\project\webdriver\chromedriver.exe
   firefox:
     driver: webdriver.gecko.driver
     driver-path: G:\study\webDriver\bin\geckodriver29.exe
-web-login-url: /
-web-pre-url: http://127.0.0.1:7070
-user:
-  handlers:
-    user1: daixiaodan
-    pwd1: 123456
-    user2: lizhi4
-    pwd2: 123456
-  company:
-    user1:
-    pwd:
-test:
-  auth:
-    data1:
-      path: C:\Users\DELL\Desktop\权限测试.xlsx
-      sheetname: 权限测试数据
+retry:
+  time: 50
+  sleep: 1000
+
+MobileDriver:
+  AndroidDriver:
+    platformName: android
+    platformVersion: 7.1.1
+    deviceName: 127.0.0.1:5555 device
+    appPackage: hko.MyObservatory_v1_0
+    appActivity: .AgreementPage
+    skipServerInstallation: true
+    automationName: UiAutomator1
+    romoteUrl: http://localhost:4723/wd/hub

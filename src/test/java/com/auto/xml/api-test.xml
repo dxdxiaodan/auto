@@ -1,0 +1,15 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name = "api自动化">
+    <test name = "MyObservatoryForest相关测试" >
+        <classes>
+            <class  name="com.auto.testcase.api.DaysForecastTest" >
+            </class>
+        </classes>
+    </test>
+    <!--配置监听器-->
+    <!--<listeners>
+        <listener class-name="MyExtentReporterListener"/>
+        <listener class-name="MyTestListener"/>
+    </listeners>-->
+</suite>

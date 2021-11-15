@@ -1,0 +1,13 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name = "自动化测试报告">
+    <suite-files>
+        <suite-file path="web-test.xml"></suite-file>
+        <suite-file path="api-test.xml"></suite-file>
+    </suite-files>
+    <!--配置监听器-->
+    <listeners>
+        <listener class-name="com.auto.common.config.MyExtentReporterListener"/>
+        <listener class-name="com.auto.common.config.MyTestListener"/>
+    </listeners>
+</suite>

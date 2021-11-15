@@ -1,4 +1,21 @@
 webdriver:
-  chrome-driver: webdriver.chrome.driver
-  chrome-driver-path: G:\study\webDriver\bin\chromedriver.exe
-main-page: http://10.3.150.25/yunbidding/
+  chrome:
+    driver: webdriver.chrome.driver
+    driver-path: M:\project\webdriver\chromedriver.exe
+  firefox:
+    driver: webdriver.gecko.driver
+    driver-path: G:\study\webDriver\bin\geckodriver29.exe
+retry:
+  time: 50
+  sleep: 1000
+
+MobileDriver:
+  AndroidDriver:
+    platformName: android
+    platformVersion: 7.1.1
+    deviceName: 127.0.0.1:5555 device
+    appPackage: hko.MyObservatory_v1_0
+    appActivity: .AgreementPage
+    skipServerInstallation: true
+    automationName: UiAutomator1
+    romoteUrl: http://localhost:4723/wd/hub
